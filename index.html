@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>PayFlow – Цифрлық чек</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>PayFlow</h1>
+<p>Чек жоқ = сенім жоқ</p>
+
+<button onclick="generateCheck()">Чек жасау</button>
+
+<div id="checkBox"></div>
+
+<h3>Чекті тексеру</h3>
+<input type="text" id="checkIdInput" placeholder="Чек ID енгіз">
+<button onclick="validateCheck()">Тексеру</button>
+<p id="validationResult"></p>
+
+<button onclick="downloadPDF()">PDF жүктеу</button>
+
+<div id="qrBox"></div>
+
+<!-- КІТАПХАНАЛАР -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+<!-- БІЗДІҢ КОД -->
+<script src="script.js"></script>
+
+</body>
+</html>
